@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9776ecd62e.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,35 +28,37 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid mx-5 px-5 ">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+		<div class="container">
+		  <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a>
+  
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+  
+		  <div class="collapse navbar-collapse" id="navmenu">
+			<ul class="navbar-nav ms-auto">
+			  <li class="nav-item">
+				<a href="#index.html" class="nav-link">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#about" class="nav-link">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#suppliment-work-container" class="nav-link">How It Works?</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#ingredient-section" class="nav-link">Ingredients</a>
+			  </li>
+			  <li>
+				<a href="#" class="nav-link"><button class="btn-1 py-0 my-2 me-5">Order Now</button>
+                </a>
+			  </li>
 
-            <a href="index.html" class="navbar-brand ms-5"><img src="images/logo.png" alt="logo" title="logo"></a>
-
-
-
-            <div class="collapse navbar-collapse">
-
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">How it Works?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingredients</a>
-                    </li>
-                    <button class="btn-1 py-0 my-2 me-5">Order Now</button>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+			</ul>
+		  </div>
+		</div>
+	  </nav>
     <!-- Navigation Ends-->
 
     <!-- Header Area -->
@@ -64,14 +68,14 @@
             <div class="row ">
                 <div class="col-md-6 col-xs-12 ">
                     <div class="left-container">
-                        <div class="bottle-img">
-                            <img class="img-fluid" src="images/bottles.png" alt="">
+                        <div>
+                            <img class="img-fluid header-img" src="images/bottles.png" alt="">
                         </div>
                         <div class="timer-title">
-                            <h2><span>Hurry Up!</span>
+                            <h1><span>Hurry Up!</span>
                                 <br>
                                 Offer Expires in:
-                            </h2>
+                            </h1>
                         </div>
                         <div class="countable-timer">
                             <ul class="countdown">
@@ -96,29 +100,33 @@
                 <div class="col-md-6 col-xs-12">
                     <div class="right-container">
                         <div class="text">
-                            <h1> Attention! Get
-                                <br>
-                                Special 84%
+                            <h1> Attention! Get Special 84%
                                 <br>
                                 Discount Today
                             </h1>
 
-                            <h6>Support Healthy Metabolism</h6>
-                            <h6>Peomote Natural Weight Loss</h6>
-                            <h6>Improve Joint Mobility</h6>
-                        </div>
-                        <div class="price">
-                            <h6>Regular price:$147</h6>
-                            <h2>Only for: 49$</h2>
-                        </div>
-                        <div class="buy-now-btn">
-                            <img src="images/paying-method.png" alt="">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="div">
-                            <button>Buy Now</button>
 
+                            <div class="product-assurance">
+                                <h6><i class="fas fa-check-circle fa-2x"></i> Support Healthy Metabolism</h6>
+                                <h6><i class="fas fa-check-circle fa-2x"></i> Peomote Natural Weight Loss</h6>
+                                <h6><i class="fas fa-check-circle fa-2x"></i> Improve Joint Mobility</h6>
+                            </div>
+
+                        </div>
+                        <div class="center-container">
+                            <div class="price">
+                                <h6 class="line-through"> Regular price:$147</h6>
+                                <h6 id="discount-price">Only for: 49$</h6>
+                            </div>
+                            <div class="buy-now-btn">
+                                <button class="buy-now-button main-area-btn">Buy Now</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="div">
+                                <img class="img-fluid" src="images/paying-method.png" alt="">
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,8 +137,463 @@
     </main>
 
 
+    <!-- Main area Ends -->
 
 
+    <!-- What is Biofit Section -->
+
+    <section id="about" class="what-is-biofit">
+
+        <h2>What Is Biofit Suppliment?</h2>
+
+        <div class="container-what-is-biofit">
+            <div class="row">
+                <div class="col-md-5 col-xs-12 three-bottle-img">
+                    <img class="img-fluid" src="images/what.png" alt="">
+                </div>
+                <div class="col-md-6 col-xs-12" id="text-details">
+                    <p>BioFit is an all-natural supplement that is known to enhance and balance good bacteria in the gut
+                        area. To lose weight, you need to have a balanced hormones and body processes. Many times,
+                        people struggle with weight loss because their gut health has issues.</p>
+                    <p>
+                        Your gut health is important, especially when it comes to digestion and boosting immune system.
+                        If it becomes unhealthy or start leaking, you will definitely struggle to lose weight. It
+                        doesn’t matter how much you work out or diet, you will struggle with fitness level.
+                    </p>
+                    <p>
+                        Your gut health relies on the good bacteria to boost metabolism, stabilize the immune system,
+                        balance hormones, and stabilize your mood. This means, when it is not in order.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- What is Biofit Section Ends -->
+
+
+    <!-- Biofit Suppliment Work  -->
+
+    <section>
+        <div id="suppliment-work-container">
+            <h1>How Does Biofit Supplement Work?</h1>
+            <p>Different weight loss supplements have varying approaches to how they help people lose weight. BioFit
+                pills contain all-natural ingredients with good bacteria to help balance off processes in the body.
+            </p>
+            <p>The main reason your gut health is important in weight loss is because it controls digestion and
+                metabolism. When your metabolism is slow, your body continues to pack unwanted fat and doesn’t burn
+                existing fat in a faster manner.
+            </p>
+            <p>By introducing good bacteria in the gut, BioFit will be improving your metabolism and thus helping you
+                gain more from dieting and exercises.
+            </p>
+            <hr class="horizontal-line">
+            <p>BioFit is an all-natural supplement that is known to enhance and balance good bacteria in the gut area.
+                To lose weight, you need to have a balanced hormones and body processes. Many times, people struggle
+                with weight loss because their gut health has issues.
+            </p>
+            <p>Your gut health is important, especially when it comes to digestion and boosting immune system. If it
+                becomes unhealthy or start leaking, you will definitely struggle to lose weight. It doesn’t matter how
+                much you work out or diet, you will struggle with fitness levels if your gut is not healthy.
+            </p>
+            <p>Your gut health relies on the good bacteria to boost metabolism, stabilize the immune system, balance
+                hormones, and stabilize your mood. This means, when it is not in order, many body processes will be
+                greatly affected.
+            </p>
+        </div>
+    </section>
+
+    <!-- Biofit Suppliment Work Section Ends -->
+
+
+    <!-- Buy Suppliment Section Starts-->
+
+    <section id="buy-suppliment">
+        <div class="buy-suppliment-container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 five-bottle-img">
+                    <img class="img-fluid" src="images/bottles.png" alt="">
+                </div>
+                <div class="col-md-5 col-sm-12 col-xs-12 shop-details">
+                    <h1>Where to Buy
+                        <br>
+                        Biofit Supplement™?
+                    </h1>
+                    <p>Click Here to Visit Biofit Supplement Official Online Store.</p>
+                    <p>Special Discount For Over 90% Today + Free Shipping!</p>
+                    <button class="official-website-btn">Biofit Suppliment Official Website <i
+                            class="fas fa-shopping-cart  official-btn"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Suppliment Section Ends-->
+
+
+
+    <!-- Biofit Ingredients -->
+
+
+    <section id="ingredient-section">
+
+        <div class="ingredients-title faq-container">
+            <h2>Biofit Supplement Ingredients:</h2>
+            <p>BioFit Probiotic is made from a natural blend of safe and effective ingredients that are known to help
+                improve digestion and metabolism.</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <ul>
+                        <li>
+                            <h4>Bacterium Lactis:</h4>
+                            <p>This bacteria helps to cleanse the gut so that the good bacteria can increase in number
+                                of good bacteria. When your colon has a lot of toxins, there is a risk of you getting
+                                inflammation. </p>
+                        </li>
+                        <li>
+                            <h4>Bacterium Longum: </h4>
+                            <p>This ingredient deals with bad bacteria that are known to cause irritation and
+                                hypersensitivity. This helps you get healthier gut. </p>
+                        </li>
+                        <li>
+                            <h4>Lactobacillus paracasei </h4>
+                            <p>This active ingredient has powerful antioxidants that flushes out toxins that affects
+                                your digestive system. This helps your body process foods at a faster rate. </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <ul>
+                        <li>
+                            <h4>Plantarum Lactobacillus </h4>
+                            <p>Protects the gut from environmental damage and maintains intestinal permeability by
+                                acting as an antioxidant. It helps the body to get rid of bad bacteria that cause gas,
+                                diarrhea, and nausea are also destroyed by this beneficial strain. </p>
+                        </li>
+                        <li>
+                            <h4>Bifidobacterium Breve: </h4>
+                            <p>This bacteria strain, which is used in the BioFit weight loss supplement, improves immune
+                                modulation, making the body stronger and more active in the face of all threats. It also
+                                promotes the conversion of food into energy, which leads to healthy weight loss.
+                                Finally, it protects against age-related metabolic effects, sagging skin, and other
+                                signs of aging. </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 faq-container">
+                    <h2>How To Take Biofit Supplement?
+                    </h2>
+                    <p>To get best results, take one Biofit capsule on a daily basis. Over time, you’ll notice that
+                        those areas of stubborn fat will go away. But remember, Biofit isn’t a miracle pill. It won’t
+                        cause you to lose tons of fat overnight. Make sure not to overdose or under dose this supplement
+                        as this will mean you will not get the desired results. Also, integrate dieting and exercises
+                        into your routine. These will help you get better results. </p>
+                    <h2>Biofit: Are There Any Side Effects? </h2>
+                    <p>There are also no Biofit side effects or negative complaints made. How Naturally, something that
+                        promises to help you drop upwards of 70 pounds in a brief period of time could seem dubious and
+                        dangerous. But BioFit weight loss probiotic tablets, though, you won’t have to worry about that.
+                    </p>
+                    <p>BioFit is a weight reduction probiotic supplement that has undergone extensive research to ensure
+                        consumer wellbeing and reliability. Since these pills are made in an FDA (The United States Food
+                        and Drug Administration) approved and GMP (Good Manufacturing Practices) certified factory, you
+                        can be certain that all protection and security procedures are followed. For added protection,
+                        the pills have indeed been individually validated by NSF. </p>
+                    <h2>BioFit Customer Reviews and Feedbacks : </h2>
+                    <p>Millions of people have used BioFit probiotic for weight loss. Some users were able to lose more
+                        than 40 pounds which is a huge success, without following any fad diet, surgery, or hiring a
+                        fitness trainer. </p>
+                    <p>If you see the feedback and reviews from BioFit consumers, it would seem that this dietary
+                        supplement is effective. Good comments and reports about people losing large amounts of weight
+                        by taking these pills feature in the reviews. </p>
+                    <p>Based on these reviews, it is evident that the time required for this supplement to show results
+                        varies for every user. Some people who are more obese may lose faster than a person who is only
+                        a few pounds over his healthy weight. The BioFit website recommends using these pills for three
+                        to six months for a complete transformation. And if a person still finds himself obese, there is
+                        no harm to continue using these pills after six months. Being a herbal formula, there are no
+                        reasons for it to go wrong even after long-term usage. </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biofit Ingredients Ends-->
+
+
+    <!-- Why Choose Us Section -->
+
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Biofit Supplement?? </h2>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box">
+                        <img src="images/usa.png" alt="">
+                        <h4>Made In The USA</h4>
+                        <p>Each batch is manufactured in US-based facility.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <img src="images/tested.png" alt="">
+                        <h4>Quality Tested</h4>
+                        <p>Each batch is tested to ensure that the label corresponds with what’s inside the bottle. </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <img src="images/free.png" alt="">
+                        <h4>FREE Shipping</h4>
+                        <p>You don’t pay for anything else but the product. </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <img src="images/non-gmo.png" alt="">
+                        <h4>No GMO</h4>
+                        <p>Vegan-friendly, gluten-free, and non-GMO.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Why Choose Us Section Ends-->
+
+
+
+    <!-- Money Back Guarantee Section -->
+
+    <section id="guarantee-section">
+        <div class="guarantee-container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="sticker-img">
+                        <img class="sticker-img img-fluid" src="images/60day.png" alt="">
+                    </div>
+                    <div class="guarantee-text">
+                        <h2>Our 60 Day Money Back Guarantee</h2>
+                        <p>You can use Biofit Supplement for a whole 60 days and use your right to ask for a refund
+                            anytime during this period. If you’re unsatisfied with the results in any way, let us know
+                            and claim your money back! </p>
+                        <p>Consider this a 2-month test run. If you don’t like it - get your investment
+                            back! Order now to secure your 60 Day Money Back Guarantee with Biofit Supplement. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Money Back Guarantee Section Ends-->
+
+
+    <!-- Buy Section -->
+
+    <section class="buy-section" id="section-8">
+        <div class="card-container">
+            <div class="card-row">
+                <!-- 1st Card -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="buy-card">
+                        <div class="card-title">
+                            <h2> Basic - 1 Bottle</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="cost">
+                                <div class="regular-price">
+                                    <h4>NORMALLY</h4>
+                                    <p>
+                                        <span class="overhead"> $</span>
+                                        <span class="line-through bold-me"> 149</span>
+                                    </p>
+                                </div>
+                                <div class="today-price">
+                                    <h4>TODAY</h4>
+                                    <span class="today-cost">
+                                        <span class="sixty-nine">$69</span>
+                                        <p>
+                                            per
+                                            <br>
+                                            bottle
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="img-fluid bottle-img" src="images/basic-1bottle.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h5>Free Shipping</h5>
+                                <h5>1 Bottle</h5>
+                            </div>
+                            <div>
+                                <a href="https://vitalflow24.com/video.php?aff=Deshibazaar&cam=&subid="> <button class="buy-now-button card-buy-button">Buy Now</button></a>
+                            </div>
+                            <div>
+                                <img class="img-fluid pay-img" src="images/paying-method.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="buy-card">
+                        <div class="card-title card-title-red">
+                            <h2> Best Value! - 6 Bottle</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="cost">
+                                <div class="regular-price">
+                                    <h4>NORMALLY</h4>
+                                    <p>
+                                        <span class="overhead"> $</span>
+                                        <span class="line-through bold-me"> 149</span>
+                                    </p>
+                                </div>
+                                <div class="today-price">
+                                    <h4>TODAY</h4>
+                                    <span class="today-cost">
+                                        <span class="sixty-nine">$49</span>
+                                        <p>
+                                            per
+                                            <br>
+                                            bottle
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="img-fluid bottle-img six-bottle" src="images/bottles.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h5>Free Shipping</h5>
+                                <h5>6 Bottle</h5>
+                                <h5>55% Discount</h5>
+                            </div>
+                            <div>
+                                <a href="https://vitalflow24.com/video.php?aff=Deshibazaar&cam=&subid="> <button class="buy-now-button card-buy-button">Buy Now</button></a>
+                            </div>
+                            <div>
+                                <img class="img-fluid pay-img" src="images/paying-method.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="buy-card">
+                        <div class="card-title">
+                            <h2> Popular - 3 Bottle</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="cost">
+                                <div class="regular-price">
+                                    <h4>NORMALLY</h4>
+                                    <p>
+                                        <span class="overhead"> $</span>
+                                        <span class="line-through bold-me"> 149</span>
+                                    </p>
+                                </div>
+                                <div class="today-price">
+                                    <h4>TODAY</h4>
+                                    <span class="today-cost">
+                                        <span class="sixty-nine">$59</span>
+                                        <p>
+                                            per
+                                            <br>
+                                            bottle
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="img-fluid bottle-img three-bottle" src="images/what.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <h5>Free Shipping</h5>
+                                <h5>3 Bottle</h5>
+                            </div>
+                            <div>
+<a href="https://vitalflow24.com/video.php?aff=Deshibazaar&cam=&subid="> <button class="buy-now-button card-buy-button">Buy Now</button></a>
+
+                            </div>
+                            <div>
+                                <img class="img-fluid pay-img" src="images/paying-method.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Buy Section -->
+
+
+
+    <!-- Footer Section -->
+
+    <section class="footer-section">
+
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text">
+                        <h4>Hurry Up! <br>
+                            <span class="grayed">Offer Expires in:</span>
+                        </h4>
+                    </div>
+
+
+                    <div class="countable-timer2">
+                        <ul class="countdown2">
+                            <li>
+                                <span class="hours2" id="hours2">00</span>
+                                <h3>HOUR</h3>
+                            </li>
+                            <li>
+                                <span class="minutes2" id="minutes2">00</span>
+                                <h3>MINUTE</h3>
+                            </li>
+                            <li>
+                                <span class="seconds2" id="seconds2">00</span>
+                                <h3>SECOND</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jumbotron">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12 anchors">
+                                    <a href="">TOS</a>
+                                    <a href="">Privacy</a>
+                                    <a href="">Disclaimer</a>
+                                    <a href="">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="footer-img" src="images/paying-method.png" alt="">
+                    <footer>© Copyright 2021 Deshibazzarbd.com All Rights Reserved.</footer>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
