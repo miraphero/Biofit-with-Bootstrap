@@ -39,3 +39,26 @@ document.getElementById("seconds2").textContent = seconds2;
 
 
 }, 1000);
+
+
+// // checkout form - country selector
+// document.addEventListener('DOMContentLoaded', () => {
+
+//     const selectDrop = document.querySelector('#countries');
+
+//     fetch('http://restcountries.eu/rest/v2/all').then(res 
+//     => {
+//         return res.json();
+//     }).then(data => {
+//         let output = "";
+//         data.forEach(country => {
+//             output += `
+
+//             <option value="${country.name}">${country.name} </option>`;
+//         })
+
+//         selectDrop.innerHTML = output;
+//     }).catch(err => {
+//         console.log(err);
+//     });
+// });

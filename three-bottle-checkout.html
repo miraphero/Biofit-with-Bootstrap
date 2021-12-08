@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Checkout</title>
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9776ecd62e.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+
+
+
+
+<body id="checkout-id">
+
+    <main id="checkout-form">
+
+        <header class="checkout-header-area">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+
+                </div>
+                <div class="col-md-6 col-xs-12"></div>
+            </div>
+        </header>
+
+
+        <div class="header-nav">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a href="#"><img src="images/clickbank.png" alt=""></a>
+                </div>
+                <div class="lang-menu">
+                    <div class="selected-lang">
+                        English
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="de">German</a>
+                        </li>
+                        <li>
+                            <a href="" class="en">English</a>
+                        </li>
+                        <li>
+                            <a href="" class="fr">French</a>
+                        </li>
+                        <li>
+                            <a href="" class="ar">Arabic</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+        <hr class="checkout-hr">
+
+        <div class="secure-checkout">
+            <h3> <i class="fas fa-lock fa-sm blacked"></i> Secure Checkout</h3>
+        </div>
+
+
+        <div class="form-container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 right-side-form">
+                    <h4><i class="fas fa-user blacked fa-sm"></i> Customer Information</h4>
+                    <hr class="less-hr">
+
+                    <div class="checkout-form-container">
+                        <form action="#">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">Email Address</span>
+                                    <input type="email" placeholder="Enter your Email" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Phone Number</span>
+                                    <input type="tel" placeholder="Enter your phone number" required>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <h4><i class="fas fa-tags fa-sm blacked"></i> Billing Information</h4>
+                    <hr class="big-hr">
+                    <h5 class="smaller">Payment Method</h5>
+                    <button class="credit-card-btn"><i class="fas fa-credit-card blacked fa-sm"></i> Credit
+                        Card</button>
+                    <div class="form-group">
+                        <label for="numeric" class="control-label">Card Holder Name</label>
+                        <input type="text" class="input-lg form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="align-together">
+                            <div> <label for="cc-number" class="control-label">Card Number</label> </div>
+                            <div class="payment-options">
+                                <img class="img-fluid" src="images/discover.svg" alt="">
+                                <img class="img-fluid" src="images/amex.svg" alt="">
+                                <img class="img-fluid" src="images/diners.svg" alt="">
+                                <img class="img-fluid" src="images/master-card.svg" alt="">
+                                <img class="img-fluid" src="images/visa.svg" alt="">
+                            </div>
+                        </div>
+                        <input type="tel" id="cc-number" class="input-lg form-control cc-number"
+                            autocomplete="cc-number" placeholder="" name="">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cc-exp" class="control-label">Expiration Date</label>
+                                <input type="tel" id="cc-number" class="input-lg form-control cc-exp"
+                                    autocomplete="cc-exp" placeholder="" name="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cc-cvc" class="control-label">Security Code</label>
+                                <input type="tel" id="cc-cvc" class="input-lg form-control cc-cvc" autocomplete="off"
+                                    placeholder="" name="">
+                            </div>
+                            <!-- Modal trigger Button -->
+
+                            <a class="what-is-this my-5" data-bs-toggle="modal" data-bs-target="#purchaseModal"
+                                href="">What is
+                                this?</a>
+
+                        </div>
+                    </div>
+
+
+                    <!--purchase Modal(forms) -->
+                    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+
+                            <div class="modal-content ">
+                                <div class="modal-header text-center ">
+                                    <h5 class="modal-title text-dark"> <i class="far fa-credit-card fa-sm blacked"></i>
+                                        Find My Security Code</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="text-center">Most cards have a 3-digit code printed on the back of the
+                                        card, to the right of the card number. </h5>
+
+                                    <img class="modal-img" src="images/modal.gif" alt="">
+
+                                    <h5 class="text-center">
+                                        American Express cards have a 4-digit code printed on the front, to the right of
+                                        the card number.
+                                    </h5>
+                                </div>
+                                <div class="modal-footer align-items-start">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h4 class="shipping-info"><i class="fas fa-truck fa-sm fa-flip-horizontal blacked"></i> Shipping
+                        Information</h4>
+                    <hr class="less-hr">
+
+
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input type="email" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Street Address</span>
+                            <input type="tel" placeholder="Input your street address" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Api / Suite / Others</span>
+                            <input type="tel" placeholder="Enter your Api/Suite/Others" required>
+                        </div>
+                    </div>
+
+                    <div class="row country-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Country</label>
+                                <input type="text" class="input-lg form-control" autocomplete="" placeholder="" name="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Zip or Post Code</label>
+                                <input type="tel" class="input-lg form-control" autocomplete="off" placeholder=""
+                                    name="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 left-side-form">
+                    <h4><i class="fas fa-cart-plus blacked fa-sm"></i> Order Summary </h4>
+                    <hr class="big-hr">
+                    <h3 style="font-weight: bold;">6 Bottles Biofit</h3>
+                    <div class="checkout-six-bottle-img">
+                        <img class="img-fluid" src="images/what.png" alt="">
+
+                    </div>
+                    <div class="bill-container">
+                        <div class="normal-price ">
+                            <h4 class="bolded"> Normal Price</h4>
+                            <h4 class="line-through bolded">$477.00</h4>
+                        </div>
+                        <hr class="full-hr">
+
+                        <div class="your-price">
+                            <h5>Your Price</h5>
+                            <h5>$177.00</h5>
+                        </div>
+                        <hr class="full-hr">
+                        <div class="subtotal">
+                            <h6>Subtotal</h6>
+                            <h6>$177.00</h6>
+                        </div>
+                        <hr class="full-hr">
+                        <div class="handling">
+                            <h6>Shipping & Handling</h6>
+                            <h6> $0.00</h6>
+                        </div>
+                        <hr class="full-hr">
+                        <div class="tax">
+                            <h6>Tax</h6>
+                            <h6>$0.00</h6>
+                        </div>
+                        <hr class="full-hr">
+                        <div class="total">
+                            <h5>TOTAL</h5>
+                            <h5>$177.00</h5>
+                        </div>
+                        <hr class="full-hr">
+                    </div>
+                    <button class="btn-checkout "> Pay Now</button>
+                    <div class="logo-aligned">
+                        <img src="images/norton.png" alt="">
+                        <img src="images/switch-case.gif" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+<div class="ever-last-container">
+    
+    <div class="row nth-container">
+        <div class="col-md-12 col-xs-12">
+            <h4>ClickBank Guarantee</h4>
+            <p>ClickBank will allow for the return or replacement of any product within 180 days from the date of
+                purchase. For more details see our <a href="">return policy</a>.
+
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="padding-top">Terms Of Sale:</h5>
+            <ul class="last-ul">
+                <li>Your purchase will appear on your statement under the name "CLKBANK*1 866 450 0608".
+                </li>
+                <li>ClickBank will allow for the return or replacement of any product within 180 days from the date
+                    of purchase. For more details see our <a href="">return policy</a>.
+                </li>
+                <li>The geographic location of your computer has been determined and recorded. All attempts at fraud
+                    will be prosecuted.
+                </li>
+                <li>Information submitted in conjunction with this order is handled within the constraints of our
+                    <a href="">privacy policy</a>.
+                </li>
+                <li>By entering your e-mail address above, you consent to ClickBank sharing that information with
+                    the vendor and/or affiliate related to this product, for order fulfillment and marketing
+                    purposes.
+                </li>
+                <li>The ClickBank Marketplace is not a chartered bank or trust company, or depository institution.
+                </li>
+                <li>The ClickBank Marketplace is not authorized to accept deposits or trust accounts and is not
+                    licensed or regulated by any state or federal banking authority.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="affiliate-link">[ affiliate = deshibzr.b6684730565c11ec8690c97a57a3afbd ]
+    </p>
+</div>
+
+<p class="aligned-center">Copyright 2021 © Click Sales Inc. <a href="">ClickBank</a> / 1444 S. Entertainment Ave / Suite 410 / Boise ID 83709.</p>
+
+    </main>
+
+
+
+
+
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+
+    <!--       
+
+<script type="text/javascript">
+$(function($){
+
+    $('.cc-number').payment('formatCardNumber');
+    $('.cc-exp').payment('formatCardExpiry');
+    $('.cc-cvc').payment('formatCardCVC');
+    $('form').submit(function(e){
+
+e.preventDefault();
+var cardType = $.payment.cardType($('.cc-number').val());
+$('.cc-number').toggleInputError(!$payment.validateCardNumber($('.cc-number').val()));
+$('.cc-exp').toggleInputError(!$payment.validateCardExpiry($('.cc-exp').payment('cardExpiryVal')));
+$('.cc-cvc').toggleInputError(!$payment.validateCardCVC($('.cc-cvc').val(),cardType));
+
+$('.validation').removeClass('text-danger text-success');
+$('.validation').addClass($('.has-error').length ?'text-danger' : 'text-success');
+
+    });
+
+
+
+
+
+
+
+}); -->
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -724,8 +724,11 @@ height: 40px;
   color: #493364;
   opacity: 0.7;
 }
+.btn-first{
+ 
+}
 .last-card-btn{
-  width: 88%;
+  max-width: 88%;
   max-height: 80px;
   border-radius: 30px;
   background-color: lightgray;
@@ -777,6 +780,9 @@ margin: 0 auto;
   display: flex;
 
   
+}
+.first-btn{
+  max-width: 100% !important;
 }
 .second-btn{
   background-color: gold;
@@ -861,9 +867,6 @@ margin: 0 auto;
 }
 .gray-truck{
   color: #493364;
-}
-.btn-first{
-  max-width: 88%
 }
 
 .per-bottle-2{
@@ -957,8 +960,13 @@ padding-left: 0;
 background-color: lightyellow;
 box-sizing: border-box;
 margin: 30px auto;
+max-width: 90%;
+display: flex;
+flex-wrap: wrap;
 }
 .second-row{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #493364;
   color: #fff;
 border: 5px solid #493364;
@@ -1091,10 +1099,423 @@ margin-bottom: 50px;
 
 
 
+/* Payment Checkout Page  */
+#checkout-id{
+ padding: 0 400px;
+ background-color: lightgray;
+}
+.checkout-header-area{
+  background: url(images/next-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
 
-#5a3f7c
+/* navbar for selecting language */
 
-border   #493364;
+a{
+    text-decoration: none;
+}
+
+.header-nav {
+   
+    background-color: #fff;
+    height: 80px;
+    padding: 10px 0;
+    
+}
+
+.nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    
+}
+
+.nav-logo img {
+    width: 100%;
+}
+.selected-lang{
+  font-size: 20px;
+  border: 1px solid gray;
+  color: gray;
+  position: relative;
+  bottom: 10px;
+  right: 50px;
+  padding: 2px 5px;
+}
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
 
 
-color #493364;
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar:before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+
+
+
+.checkout-hr{
+  color: gray;
+  background-color: gray;
+}
+.blacked{
+  color: black;
+  margin-right: 15px;
+}
+.secure-checkout{
+  height: 50px;
+  background: lightgray;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 98%;
+  margin: auto;
+  border-radius: 5px;
+  
+}
+
+.secure-checkout h3{
+  color: #000;
+}
+
+#checkout-form{
+  background: #fff;
+  padding: 0;
+}
+.less-hr{
+  width: 60%;
+}
+.big-hr{
+  width: 94%;
+}
+.right-side-form h4, .left-side-form h4{
+  font-weight: 400;
+}
+.right-side-form{
+  padding-left: 40px;
+}
+.left-side-form{
+  padding-right: 20px;
+}
+.user-details{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+
+
+}
+.input-box{
+  width: 98%;
+  /* width: calc(100% / 2 - 20px); */
+  margin-bottom: 15px;
+}
+input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.details{
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+input:focus, input:valid{
+  border-color: #9b59b6;
+}
+.input-box span, .form-group label{
+  font-weight: bold;
+  font-size: 1em;
+}
+
+@media (max-width: 584px) {
+  .checkout-form-container{
+    max-width: 100%;
+  }
+  .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .user-details{
+    max-height: 300px;
+    overflow-y:scroll ;
+  }
+  .user-details::webkit-scrollbar {
+    width: 0;
+  }
+}
+.smaller{
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.form-container{
+  background-color: #fff;
+}
+.credit-card-btn{
+  max-width: 40%;
+  background: lightgray;
+  color: #000;
+  font-weight: 300;
+  padding: 5px;
+  border-radius: 5px;
+}
+.form-control:focus{
+box-shadow: 10px 0 0 0 #fff !important;
+border-color: #4ca746 ;
+}
+.align-together{
+  display: flex;
+  justify-content: space-between;
+}
+.align-together img{
+  height: 2rem;
+}
+
+.form-group{
+  margin: 10px auto;
+  width: 100%;
+}
+.payment-options{
+  padding-bottom: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.payment-options img{
+  max-height: 20px;
+}
+.modal-header, .modal-footer{
+  background-color: lightyellow;
+}
+.modal-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px auto;
+}
+.what-is-this{
+  text-align: left;
+  text-decoration: underline;
+  margin-left:auto;
+}
+.shipping-info{
+  margin-top: 15px;
+}
+/* 
+
+.country-container{
+  display: grid;
+  margin: auto;
+}
+.country-container input {
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+
+ */
+
+.checkout-six-bottle-img{
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.purpled{
+  color: indigo;
+  font-weight: bold;
+}
+.normal-price, .your-price, .subtotal, .handling, .tax, .total{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-container{
+  margin: 5px 30px;
+}
+.logo-aligned{
+  text-align: center;
+}
+.logo-aligned img{
+  margin: 5px;
+}
+
+.btn-checkout{
+  width: 90%;
+  background-color: #493364;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 30px;
+  font-size: 20px;
+  
+padding-top: 8px;
+padding-bottom: 8px;
+border-radius: 3px;
+}
+
+.normal-price h4{
+  font-weight: bold;
+  color: indigo;
+}
+.nth-container{
+  max-width: 100%;
+  display: flex;
+  text-align: left;
+  border: 2px solid lightgray;
+  justify-content: center;
+  padding: 30px auto;
+}
+.nth-container h4{
+  color: black;
+  font-weight: 200;
+}
+
+.nth-container p{
+  color: black;
+  font-size: 0.8em;
+
+}
+.last-ul li{
+color: gray;
+font-size: 0.7em;
+}
+.last-ul{
+  padding-left: 20px;
+}
+.ever-last-container{
+  background-color: #fff;
+  padding: 40px 40px 10px 40px;
+}
+.padding-top{
+  padding-top: 30px;
+}
+
+.affiliate-link{
+  font-size: 0.6em;
+  text-align: center;
+  padding-top: 30px;
+}
+.aligned-center{
+  text-align: center;
+}
+.btn-checkout:hover{
+  background-color: darkred;
+}
+.checkout-one-bottle{
+  max-width: 50%;
+}
+
+.checkout-three-bottle{
+  max-width: 65%;
+}
+.btn-first{
+  width: 100%;
+  padding: 5px 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
+
+/* Payment Checkout Page Ends */
