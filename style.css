@@ -1501,6 +1501,7 @@ font-size: 0.7em;
 }
 .btn-checkout:hover{
   background-color: darkred;
+  border: none;
 }
 .checkout-one-bottle{
   max-width: 50%;
