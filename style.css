@@ -35,7 +35,7 @@ color: indigo;
   font-size: 18px;
   font-weight: bold;
   padding: 0px 20px; 
-  border-radius: 5px;
+  border-radius: 48%;
   color: #252525;
   text-decoration: none;
   border: none;
@@ -49,8 +49,8 @@ color: indigo;
 /* Header Area */
 
 main{
-  background: #493364bb  url(images/carrate3.jpg);
-  /* background-blend-mode: darken; */
+  background: #150a21bb  url(images/carrate3.jpg);
+  background-blend-mode: darken;
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center top;
@@ -199,7 +199,7 @@ font-weight: bold;
   max-height: 70px;
   color: #000;
 background: linear-gradient(180deg, orange, yellow);
-border-radius: 10px;
+border-radius: 50%;
 border: none;
 font-size: 30px;
 margin-top: 20px;
@@ -581,6 +581,9 @@ padding-bottom: 40px;}
 }
 .footer-text > h4{
   font-weight: bold;
+}
+.copyright-text{
+  padding-top: 20px;
 }
 .grayed{
 color: gray;
