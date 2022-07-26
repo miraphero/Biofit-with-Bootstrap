@@ -49,7 +49,7 @@ color: indigo;
 /* Header Area */
 
 main{
-  background: #150a21bb  url(images/carrate3.jpg);
+  background: #0f0618bb  url(images/carrate3.jpg);
   background-blend-mode: darken;
   background-blend-mode: soft-light;
   background-size: cover;
@@ -97,6 +97,7 @@ margin-bottom: 30px;
 padding: 8px 5px 3px 0;
 border-radius: 10px;
 border: 2px solid #fff;
+border: none;
 }
 .countable-timer2{
   max-height: 100px;
@@ -184,7 +185,8 @@ h6{
 }
 
 .fas{
-  color: rgb(61, 240, 61);
+  /* color: rgb(61, 240, 61); */
+  color: rgb(0, 255, 208);
 }
 #discount-price{
   font-size: 30px;
@@ -583,11 +585,13 @@ padding-bottom: 40px;}
   font-weight: bold;
 }
 .copyright-text{
-  padding-top: 20px;
+  padding-top: 30px;
+  
 }
 .grayed{
 color: gray;
-padding-top: 5px;
+padding-top: 20px;
+/* padding-top: 5px; */
 }
 .anchors{
   display: flex;
